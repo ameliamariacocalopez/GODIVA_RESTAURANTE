@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GODIVA</title>
+    <link rel="stylesheet" href="style.css">
+    <href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"></href>
+    <link rel="icon" href="img/godiva.jpg" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+  />
+</head>
+<body>
+    
+    <div class="container">
+
+        <!--<nav class="titulo">
+               <h1 class="tituloTexto">THE CUISINE RESTAURANT</h1> 
+        </nav>-->
+
+        <nav class="menu">
+            <label for="" class="ocultarMenu">
+            <div class="icon"><i class='bx bx-menu'></i></div>
+            </label>
+            <ul class="cont_ul">
+                
+                <img src="img/logonuevo.png" alt="" class="restaurante" usemap="#inicio">
+                    <map name="inicio">
+                        <area shape="rect" coords="4,4,856,600" href="index.html" target="_blank" alt="">
+                    </map>
+                <img src="img/registrarse.png" alt="" class="registrarse" target="_blank" usemap="#registrarse">
+                    <map name="registrarse">
+                        <area shape="circle" coords="25,25,25" href="login.html" target="_blank" alt="">
+                    </map>
+                <li class="develop">
+                    <p class="liMenu"><a href="index.html" target="_blank"> Principal</a></p>
+                    <ul class="ul_Principal">
+                        <li class="platos"><a href="noticias.html" target="_blank"> Noticias</li></a>
+                        <li class="platos"><a href="eventos.html" target="_blank"> Eventos</li></a>
+                    </ul> 
+                </li>
+                <li class="develop">
+                    <p class="liMenu">Carta</p> 
+                    <ul class="ul_Carta">
+                        <li class="platos"><a href="platos.html" target="_blank"> Platos</a></li>
+                        <li class="cartaPeques"><a href="cartapeques.html" target="_blank"> Carta Peques</li></a>
+                        <li class="vino"><a href="cartavinos.html" target="_blank"> Vinos</li></a>
+                        <li class="vegetariano"><a href="vegetarianos.html" target="_blank"> Vegetarianos</li></a>
+                    </ul>
+                </li>
+                <li class="develop">
+                    <p class="liMenu">Contacto</p> 
+                    <ul class="ul_Contacto">
+                        <li class="reserva"><a href="reserva.html" target="_blank"> Reserva</li></a>
+                        <li class="reseña"><a href="opinion.html" target="_blank"> Opinion</li></a>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+    
+
+
+    <div class="container8"> 
+        <!--header: contedrá el título de la página web (e inlcuso puede tener un logo
+            y el menú de navegación representado en una etiqueta nav)
+        <header class="rojo">
+            <h1>Desarrollo Aplicaciones Web</h1>
+            <nav>
+                <div class="icon"><i class="bx bx-menu" style="font-size:24px"></i></div>
+                <div class="menu_item">Inicio</div>
+                <div class="menu_item">Proyectos</div>
+                <div class="menu_item">Contacto</div>
+            </nav>
+        </header>
+
+    </div>-->
+    <script>
+        /* Icono del menu. Vamos a darle funcionalidad para hacer que se oculte
+                o aparezca  según el tamaño de la ventana*/
+        $(function() {
+            //Captura del evento para mostrar u ocultar el menu
+            $(".icon").click(function() {
+                $(".menu_item").toggle();
+            });
+            $(window).resize(function() {
+                var anchura = $(this).width();
+                if (anchura > 576) {
+                    $(".menu_item").show();
+                }
+            });
+        });
+    </script>
+
+
+
+
+<div>
+    <p class="conocenos">C O N O C E N O S</p>
+    <div class="cardNosotros">
+        <div class="contenidoLugar">
+            <h1 class="LUGAR">LUGAR</h1>
+            <p class="textoLugar">Si buscas un restaurante en Madrid con una ubicación privilegiada, el restaurante Godiva en Plaza España es una excelente opción. Situado en el corazón de la ciudad, este restaurante se encuentra en una de las plazas más icónicas de Madrid, rodeado de edificios históricos y puntos turísticos de interés.
+                Al entrar en el restaurante, la decoración moderna y sofisticada crea una atmósfera acogedora que te hace sentir bienvenido. Pero lo más impresionante es la vista de la Plaza España que se puede apreciar desde las mesas del restaurante. Es un espectáculo impresionante ver la fuente central y los edificios históricos mientras disfrutas de una cena deliciosa.
+                En resumen, si quieres disfrutar de una cena deliciosa en un lugar con una ubicación privilegiada en Madrid, no puedes equivocarte con el restaurante Godiva en Plaza España. La vista impresionante y la comida deliciosa hacen que valga la pena visitarlo.</p>
+        </div>
+    </div>
+
+    <div class="cardNosotros">
+        <div class="contenidoNosotros">
+            <h1 class="NOSOTROS">NOSOTROS</h1>
+            <p class="textoNosotros">Godiva es un excelente lugar para aquellos que quieran probar los auténticos sabores de España. La decoración del lugar es muy acogedora y agradable, con una iluminación suave y una ambientación que invita a relajarse y disfrutar de una buena comida. El personal es muy amable y servicial, siempre dispuesto a brindar recomendaciones sobre los platos del menú y a ayudar en todo lo necesario.
+                Hablando del menú, debo decir que me impresionó mucho la variedad de opciones que ofrece Godiva. Desde platos clásicos como la paella y el jamón serrano, hasta opciones más innovadoras y creativas, hay algo para todos los gustos.
+                Sin duda, uno de los puntos fuertes deGodiva es su amplia selección de vinos españoles, que complementan a la perfección los sabores de los platos. También destacaría la excelente relación calidad-precio que ofrece el restaurante, especialmente teniendo en cuenta la calidad de la comida y el servicio.
+                En resumen, si estás buscando un restaurante en Madrid donde disfrutar de la auténtica gastronomía española en un ambiente acogedor y amistoso, Godiva es definitivamente una excelente opción.</p>
+        </div>
+    </div>
+
+    
+</div>
+
+<!--Pie de Página-->
+<footer class="footer">
+    <div class="warp-footer">
+ <div class="cajagrande">
+     <h5 class="titulo1">DIRECCION</h5>
+         Plaza España
+         <br>
+         Madrid - 280009
+         <br>
+         Móvil: (+34) 900 00 00 00
+         <br>
+         Telefono: (+34) 600 00 00 00
+ </div>
+ <div class="cajagrande2">
+ 
+     <h5 class="titulo1">HORARIO</h5>
+ 
+     Lunes - Jueves
+     <br>
+     10:00h - 22:00h
+     <br>
+     Viernes - Domingo  /   Festivos Incluidos
+     <br>
+     10:00h - 00:00h
+     <br>
+ 
+ </div>
+ <div class="cajagrande3">
+     <img class= "logo"src="img/logonuevo.png" alt="">
+ </div>
+    </div>
+   </footer>
+
+
+
+
+    
+
+
+</body>
+</html>
