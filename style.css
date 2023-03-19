@@ -1,0 +1,734 @@
+*{
+    padding: 0px;
+    margin: auto;
+    list-style: none;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Restaurante';
+    src: url(font/RestaurantMenuBook.ttf);
+}
+@font-face {
+    font-family: 'Restaurante';
+    src: url(font/RestaurantMenuBook.ttf);
+}
+@font-face {
+    font-family: 'Carta';
+    src: url(font/Crucial-Medium.otf);
+}
+@font-face {
+    font-family: 'TituloCarta';
+    src: url(font/Blackboard\ Restaurant.otf);
+}
+
+body{
+    background-color: #dccfbf;
+    color: black;
+    width:100%;
+} 
+  /*Parte de logo con el menu*/
+nav{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.liMenu+.platos+.cartaPeques+.vino+.reserva+.reseña{
+    padding: 0.5em;
+    display: none;
+}
+.ocultarMenu{
+    align-items: center;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.icon{
+    margin-top: 50px;
+    align-items: center;
+}
+
+nav.menu{
+    width: 100%;
+    display:inline-block;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-image: url(img/fondo_madera2.jpg);
+    padding-left: 2vw;
+    font-family: 'Restaurante';
+}
+nav.menuCartas{
+    width: 100%;
+    display:inline-block;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-image: url(img/fondo_madera2.jpg);
+    padding-left: 2vw;
+    font-family: 'Restaurante';
+}
+
+.menu{
+    text-align: center;
+    font-size: 25px;
+}
+.menuCartas{
+    text-align: center;
+    font-size: 25px;
+}
+li{
+    list-style: none;
+    cursor: pointer;/*cambiar el puntero*/
+    padding: 1.5vw;
+    transition: all 0.3s ease 0s;
+    display: inline-block;
+}
+.liMenu{
+    font-size: 30px;
+}
+
+/*logo restaurante y  resgistrarse*/
+.platos+.cartaPeques+.vino+.reseña+.reserva+.vegetariano{
+    display: inline;
+    text-align: center;
+    padding: 10px;
+}
+.restaurante{
+    width: 100px;
+    height: 100px;
+    float: left;
+    
+}
+.registrarse{
+    float: right;
+    height: 60px;
+    margin: 5px 10px;
+}
+
+/*carta desplegable fondo*/
+.platos:hover{
+    border-color: #fff;
+    border-radius: 10px #fff;
+    background-color: #fff;
+}
+.cartaPeques:hover{
+    border-color: #fff;
+    border-radius: 10px #fff;
+    height: 70px;
+    background-color: #fff;
+}
+.vino:hover{
+    border-color: #fff;
+    border-radius: 10px #fff;
+    background-color: #fff;
+}
+.vegetariano:hover{
+    border-color: #fff;
+    border-radius: 10px #fff;
+    background-color: #fff;
+}
+
+.ul_Carta{
+    display:none;
+    position: absolute;
+    margin-top: 0.5vw;
+}
+.ul_Carta>li{
+    width: 150px;
+    transform: translateX(-20px);
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    font-size: 15px;
+}
+.develop:hover>.ul_Carta{
+    display: block;
+}
+
+.ul_Contacto{
+    display: none;
+    position: absolute;
+    margin-top: 0.5vw;
+}
+.ul_Contacto>li{
+    width: 150px;
+    transform: translateX(-20px);
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    font-size: 15px;
+}
+.develop:hover>.ul_Contacto{
+    display: block;
+    
+}
+
+
+.ul_Principal{
+    display:none;
+    position: absolute;
+    margin-top: 0.5vw;
+}
+.ul_Principal>li{
+    width: 150px;
+    transform: translateX(-20px);
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    font-size: 15px;
+}
+.develop:hover>.ul_Principal{
+    display: block;
+}
+
+
+
+
+.reserva:hover{
+    border-color: #fff;
+    border-radius: 10px #fff;
+    background-color: #fff;
+}
+.reseña:hover{
+    border-color: #fff;
+    border-radius: 10px #fff;
+    height: 70px;
+    background-color: #fff;
+}
+
+
+.menu_item {/*Logo del menu cuando hacemos la web mas pequeña*/
+    padding: 0.5em;
+    display: none;
+}
+@media screen and (min-width:576px){
+    menu{
+        display: flex;
+    }
+    .ocultarMenu{
+        display: inline-block;
+    }
+    .icon{
+        display: none;
+    }
+    .liMenu{
+        display: flex;
+    }
+    .platos{
+        display: flex;
+    }
+    .cartaPeques{
+        display: flex;
+    }
+    .vino{
+        display: flex;
+    }
+    .reserva{
+        display: flex;
+    }
+}
+
+@media screen and (max-width:576px){
+    .ocultarMenu{
+        display: inline-block;
+    }
+
+    .liMenu{
+        display: none;
+    }
+}
+
+
+/*INFO*/
+.conocenos{
+    font-family: 'Restaurante';
+    text-align: center;
+    margin-top: 60px;
+    font-size: 60px;
+    text-shadow:7px 23px 25px #000; ;
+}
+.cardNosotros{
+    margin: auto;
+    margin-top: 40px;
+    width: 750px;
+    height: 600px;
+    border-radius: 1px;
+    box-shadow:7px 13px 35px #000; ;
+    cursor: pointer;
+}
+.contenidoLugar{
+    background-image: url(img/como_es_el_lugar.jpeg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    text-align: center;
+}
+.contenidoNosotros{
+    background-image: url(img/sobre_nosotros.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    text-align: center;
+}
+.textoLugar{
+    font-size: 23px;
+    margin-top: 50px;
+    margin: 10px;
+    opacity: 0;
+    transition: .5s;
+}
+.textoNosotros{
+    font-size: 23px;
+    margin-top: 60px;
+    margin: 10px;
+    opacity: 0;
+    transition: .5s;
+}
+.LUGAR{
+    font-size: 40px;
+    color: blanchedalmond;
+}
+.NOSOTROS{ 
+    font-size: 45px;
+    color: blanchedalmond;
+}
+.cardNosotros:hover .textoLugar{
+    opacity: 1;
+    background-color: rgba(255, 235, 205, 0.585);
+}
+.cardNosotros:hover .textoNosotros{
+    opacity: 1;
+    background-color: rgba(255, 235, 205, 0.585);
+
+}
+
+/*Footer*/
+
+footer{
+    margin-top: 90px;
+    background-image: url(img/fondo_madera2.jpg);
+    display: inline-block;
+    width: 100%;
+}
+.wrap-footer{
+    padding: 1rem;
+    margin: 2px auto;
+    max-width: 100%;
+    position: relative;
+}
+footer ul{
+    padding:0;
+  }
+footer li{
+    list-style: none;
+}
+.logo{
+    height: 150px;
+    width: 150px;
+}
+.cajagrande{
+    display:inline-block;
+    margin-left: 55px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.cajagrande2{
+    margin-top: 10px;
+    display:inline-block;
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+.cajagrande3{
+    margin-top: 10px;
+    float: right;
+    margin-bottom: 10px;
+    
+}
+.titulo1{
+    font-family: 'Restaurante';
+    font-size: 20px;
+}
+.logo{
+    height: 100px;
+    width: 100px;
+    margin-right: 10px;
+}
+
+/*Formulario-Reserva*/
+
+.mapa{
+    text-align: center;
+}
+
+.divFormularioReserva{
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    width: 550px;
+    height: 700px;
+    margin-top: 70px;
+    background-image: url(img/fondo_madera2.jpg);
+    box-shadow: 7px 13px 35px #000;/*Sobra al div, 7px eje 'x' horizontal, si es positivo derecha. 13px eje vertical, si es positivo hacia abajo. 37px cuanto mayor sea mayor más difuminado está */
+}
+.textoReserva{
+    font-family: 'Restaurante';
+    font-size: 60px;
+}
+.apartadosFormulario{
+    width: 360px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid black;
+    background-color: rgb(168, 164, 164);
+}
+#nombre{
+    background-color: rgb(168, 164, 164);
+}
+#telefono{
+    background-color: rgb(168, 164, 164);
+}
+#comensales{
+    background-color: rgb(168, 164, 164);
+}
+::placeholder{/*Lo utilizamos para cambiar el color del texto del placeholder*/
+    color: black;
+}
+.imgCheckbox{
+    width: 20px;
+    height: 20px;
+}
+input[type=checkbox] {/*Dar altura y anchura a las cajas de la 'checkbox'*/
+    width: 20px;
+    height: 20px;
+  }
+.enviarDatos{
+    color: white;
+    background-color: black;
+    width: 90px;
+    height: 40px;
+    margin: 20px;
+}
+.enviarDatos:hover{
+    background: #c79dc3;
+}
+/*Registrartese y Login*/
+.divFormularioLogin{
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    width: 550px;
+    height: 400px;
+    margin-top: 70px;
+    background-image: url(img/fondo_madera2.jpg);
+    box-shadow: 7px 13px 35px #000;/*Sobra al div, 7px eje 'x' horizontal, si es positivo derecha. 13px eje vertical, si es positivo hacia abajo. 37px cuanto mayor sea mayor más difuminado está */
+}
+.textoLogin{
+    font-family: 'Restaurante';
+    font-size: 60px;
+}
+#login{
+    background-color: black;
+}
+
+/*EFECTO PARALLAX VEGANOS Y SERVICIOS*/
+h1 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 80px;
+    color: antiquewhite;
+}
+
+.container__cards {
+    max-width: 1400px;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cartaparallax {
+    width: 300px;
+    margin: 10px;
+    transition: all 300ms;
+}
+
+.cartaparallax:hover {
+    width: 350px;
+}
+
+.cartaparallax .cover {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cartaparallax .cover img {
+    width: 250px;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 40px;
+    z-index: 1;
+    filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.5));
+    transition: all 400ms;
+}
+
+.cartaparallax:hover .cover img {
+    top: 0px;
+    filter: none;
+}
+
+.cartaparallax .img__back {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    background-size: cover;
+    border-radius: 20px;
+    transition: all 300ms;
+}
+
+
+.cartaparallax:nth-of-type(1) .img__back {
+    background-image: url(img/background.jpg);
+}
+
+.cartaparallax:nth-of-type(2) .img__back {
+    background-image: url(img/background.jpg);
+}
+
+.cartaparallax:nth-of-type(3) .img__back {
+    background-image: url(img/background.jpg);
+}
+
+.cartaparallax:nth-of-type(4) .img__back {
+    background-image: url(img/background.jpg);
+}
+
+.cartaparallax:nth-of-type(5) .img__back {
+    background-image: url(img/background.jpg);
+}
+
+.cartaparallax:hover .img__back {
+    bottom: -40px;
+}
+
+.cartaparallax .description {
+    background: white;
+    margin-top: -10px;
+    padding: 20px;
+    border-radius: 0px 0px 20px 20px;
+    transition: all 300ms;
+}
+
+.cartaparallax:hover .description {
+    padding: 40px;
+}
+
+.cartaparallax .description h2 {
+    margin-top: 10px;
+}
+
+.cartaparallax .description p {
+    margin-top: 10px;
+}
+
+.cartaparallax .description input {
+    padding: 10px 40px;
+    margin-top: 20px;
+    border: none;
+    background: #A6359D;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 300ms;
+}
+
+.cartaparallax .description input:hover {
+    background: #83277b;
+}
+
+.alergenosplatos2{
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-right: 10px; 
+}
+
+
+/*FLIPCARD*/
+
+.titulocarta{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: 'TituloCarta';
+    font-size: 30px;
+}
+.rellenarplatos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+    z-index: 1;
+}
+.card .plato{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.card .delantera{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0px 5px 10px black;
+}
+.card .delantera img{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+h3{
+    font-family: 'Carta';
+}
+.card .delantera h3{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgb(190, 170, 116);
+    text-align: center;
+
+}
+.card .trasera{
+    transform: perspective(600px) rotateY(180deg);
+    background-image: url(img/fondo_madera2.jpg);
+    padding: 15px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 5px 10px #000;
+
+}
+.card .trasera .ingredientes{
+    border-top: 3px solid black;
+    height: 50px;
+    line-height: 50px;
+}
+.card .trasera .ingredientes a{
+    color: black;
+}
+.card .trasera h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.card .trasera p{
+    letter-spacing: 1px;
+    text-align: center;
+}
+.card:hover .delantera{
+    transform: perspective(600px) rotateY(180deg);
+}
+.card:hover .trasera{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+/*ALERGENOS*/
+.alergenos{
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin: 13px; 
+}
+.alergenos2{
+    padding: 1rem;
+    margin: 2px auto;
+    max-width: 100%;
+    position: relative;
+}
+.alergenosplatos{
+    width: 45px;
+    height: 45px;
+    float: left;
+    margin-right: 10px; 
+}
+
+/*Noticias*/
+.img_noticias{
+    width: 190px;
+    height: 190px;
+}
+/*Div principal de las Cartas*/
+.divPlatos{
+    margin-top: 50px;
+}
+/*VINOS*/
+
+.vinos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: 'TituloCarta';
+    font-size: 30px;
+    width: 700px;
+    float: left;
+    background-image: url(img/vino_blanco.jpg);
+
+}
+.vinos1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+	justify-content: center;
+    font-family: 'TituloCarta';
+    font-size: 30px;
+    float: right;
+    background-image: url(img/vino_tinto.jpg);
+
+}
+.marca { 
+    position: absolute; 
+    bottom: 10px;
+    text-align: center;
+    left: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+	justify-content: center;
+}
+.marca1 { 
+    position: absolute; 
+    bottom: 10px; 
+    text-align: center;
+    right: 250px;
+    color: azure;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+	justify-content: center;
+}
